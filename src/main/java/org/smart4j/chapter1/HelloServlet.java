@@ -21,7 +21,6 @@ public class HelloServlet extends HttpServlet {
         String currentTime = dateFormat.format(new Date());
         req.setAttribute("currentTime", currentTime);
         req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(req, resp);
-
     }
 
 }
